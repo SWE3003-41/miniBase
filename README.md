@@ -39,6 +39,7 @@ $ git clone https://github.com/SWE3003-41/miniBase
 |ant|Build miniBase|
 |ant test|Run all the unit test provided|
 |ant runtest -Dtest=testname|Run the specific unit test|
+|ant clean|Remove binary files|
 |and handin|Make tarball|
 
 
