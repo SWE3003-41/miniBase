@@ -42,5 +42,3 @@ $ git clone https://github.com/SWE3003-41/miniBase
 |ant clean|Remove binary files|
 |and handin|Make tarball|
 
-
-... fetch test
