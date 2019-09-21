@@ -20,14 +20,14 @@ public class RecordId implements Serializable {
      *            the tuple number within the page.
      */
     public RecordId(PageId pid, int tupleno) {
-        // some code goes here
+        // TODO: some code goes here
     }
 
     /**
      * @return the tuple number this RecordId references.
      */
     public int tupleno() {
-        // some code goes here
+        // TODO: some code goes here
         return 0;
     }
 
@@ -35,7 +35,7 @@ public class RecordId implements Serializable {
      * @return the page id this RecordId references.
      */
     public PageId getPageId() {
-        // some code goes here
+        // TODO: some code goes here
         return null;
     }
 
@@ -47,7 +47,7 @@ public class RecordId implements Serializable {
      */
     @Override
     public boolean equals(Object o) {
-        // some code goes here
+        // TODO: some code goes here
         throw new UnsupportedOperationException("implement this");
     }
 
@@ -59,7 +59,7 @@ public class RecordId implements Serializable {
      */
     @Override
     public int hashCode() {
-        // some code goes here
+        // TODO: some code goes here, there is no answer make this function freely. (But you should ensure different outputs for different recordID
         throw new UnsupportedOperationException("implement this");
 
     }

@@ -20,13 +20,16 @@ public class BufferPool {
     constructor instead. */
     public static final int DEFAULT_PAGES = 50;
 
+    // TODO : define instance variable
+    // hint!! we need to match pid and page, So that we need additional data structure.
+
     /**
      * Creates a BufferPool that caches up to numPages pages.
      *
      * @param numPages maximum number of pages in this buffer pool.
      */
     public BufferPool(int numPages) {
-        // some code goes here
+        // TODO: some code goes here
     }
 
     /**
@@ -46,7 +49,8 @@ public class BufferPool {
      */
     public  Page getPage(TransactionId tid, PageId pid, Permissions perm)
         throws TransactionAbortedException, DbException {
-        // some code goes here
+        // TODO: some code goes here
+	// Usage hint, refer Permission.java for Permission variable
         return null;
     }
 

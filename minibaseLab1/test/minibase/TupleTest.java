@@ -41,7 +41,7 @@ public class TupleTest extends MiniBaseTestBase {
     /**
      * Unit test for Tuple.getRecordId() and Tuple.setRecordId()
      */
-    /*@Test public void modifyRecordId() {
+    @Test public void modifyRecordId() {
         Tuple tup1 = new Tuple(Utility.getTupleDesc(1));
         HeapPageId pid1 = new HeapPageId(0,0);
         RecordId rid1 = new RecordId(pid1, 0);
@@ -55,7 +55,7 @@ public class TupleTest extends MiniBaseTestBase {
     			"RecordId.equals() not being implemented.  This is not required for Lab 1, " +
     			"but should pass when you do implement the RecordId class.");
 	}
-    }*/
+    }
 
     /**
      * JUnit suite target

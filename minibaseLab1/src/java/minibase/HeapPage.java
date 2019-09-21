@@ -65,7 +65,9 @@ public class HeapPage implements Page {
         @return the number of tuples on this page
     */
     private int getNumTuples() {        
-        // some code goes here
+        // TODO: some code goes here
+	// hint!! See the formula in the assignment description PPT.
+
         return 0;
 
     }
@@ -75,8 +77,9 @@ public class HeapPage implements Page {
      * @return the number of bytes in the header of a page in a HeapFile with each tuple occupying tupleSize bytes
      */
     private int getHeaderSize() {        
+        // TODO: some code goes here
+	// hint!! See the formula in the assignment description PPT.
         
-        // some code goes here
         return 0;
                  
     }
@@ -102,8 +105,8 @@ public class HeapPage implements Page {
      * @return the PageId associated with this page.
      */
     public HeapPageId getId() {
-    // some code goes here
-    throw new UnsupportedOperationException("implement this");
+    	// TODO: some code goes here
+    	throw new UnsupportedOperationException("implement this");
     }
 
     /**
@@ -272,7 +275,7 @@ public class HeapPage implements Page {
      * Returns the number of empty slots on this page.
      */
     public int getNumEmptySlots() {
-        // some code goes here
+        // TODO: some code goes here
         return 0;
     }
 
@@ -280,7 +283,7 @@ public class HeapPage implements Page {
      * Returns true if associated slot on this page is filled.
      */
     public boolean isSlotUsed(int i) {
-        // some code goes here
+        // TODO: some code goes here
         return false;
     }
 
@@ -297,7 +300,8 @@ public class HeapPage implements Page {
      * (note that this iterator shouldn't return tuples in empty slots!)
      */
     public Iterator<Tuple> iterator() {
-        // some code goes here
+        // TODO: some code goes here
+	// hint!! List provide iterator method
         return null;
     }
 

@@ -22,8 +22,9 @@ public class HeapFile implements DbFile {
      *            the file that stores the on-disk backing store for this heap
      *            file.
      */
+
     public HeapFile(File f, TupleDesc td) {
-        // some code goes here
+        // TODO: some code goes here
     }
 
     /**
@@ -32,7 +33,7 @@ public class HeapFile implements DbFile {
      * @return the File backing this HeapFile on disk.
      */
     public File getFile() {
-        // some code goes here
+        // TODO: some code goes here
         return null;
     }
 
@@ -46,7 +47,7 @@ public class HeapFile implements DbFile {
      * @return an ID uniquely identifying this HeapFile.
      */
     public int getId() {
-        // some code goes here
+        // TODO: some code goes here
         throw new UnsupportedOperationException("implement this");
     }
 
@@ -56,13 +57,14 @@ public class HeapFile implements DbFile {
      * @return TupleDesc of this DbFile.
      */
     public TupleDesc getTupleDesc() {
-        // some code goes here
+        // TODO: some code goes here
         throw new UnsupportedOperationException("implement this");
     }
 
     // see DbFile.java for javadocs
     public Page readPage(PageId pid) {
-        // some code goes here
+        // TODO: some code goes here
+	// hint!! to read specific page at arbitrary offset you need random access to the file
         return null;
     }
 
@@ -76,7 +78,8 @@ public class HeapFile implements DbFile {
      * Returns the number of pages in this HeapFile.
      */
     public int numPages() {
-        // some code goes here
+        // TODO: some code goes here
+	// hint!! you can calculate number of pages as you know PAGE_SIZE
         return 0;
     }
 
@@ -98,9 +101,77 @@ public class HeapFile implements DbFile {
 
     // see DbFile.java for javadocs
     public DbFileIterator iterator(TransactionId tid) {
-        // some code goes here
+        // TODO: some code goes here
         return null;
     }
 
+    // TODO: make HeapFileIterator class, you can freely add new methods, variable
+    /**
+     * Class for iterating over all tuples of this file
+     *
+     * @see minibase.DbFileIterator
+     */
+    private class HeapFileIterator implements DbFileIterator {
+    
+	    /**
+	     * Constructor for iterator
+	     *
+	     * @param tid Transactional of requesting transaction
+	     * @param tableId of the HeapFile
+	     * @param numPages the number of pages in file
+	     */
+	    public HeapFileIterator(TransactionId tid, int tableId, int numPages) {
+	    	// hint: you can get tuple iterator from HeapPage 
+	    }
+
+	    /**
+	     * Open it iterator for iteration
+	     *
+	     * @throws DbException
+	     * @throws TransactionAbortedException
+	     */
+	    public void open() throws DbException, TransactionAbortedException {
+
+	    }
+
+	    /**
+	     * Check if iterator has next tuple
+	     *
+	     * @return boolean true if exists
+	     * @throws DbException
+	     * @throws TransactionAbortedException
+	     */
+	    public boolean hasNext() throws DbException, TransactionAbortedException {
+	    	return false;
+	    }
+
+	    /**
+	     * Get next tuple in this file
+	     *
+	     * @return
+	     * @throws DbException
+	     * @throws TrnasactionAbortedException
+	     * @throws NoSuchElementException
+	     */
+	    public Tuple next() throws DbException, TransactionAbortedException, NoSuchElementException {
+	    	return null;
+	    }
+
+	    /**
+	     * Rewind iterator to the start of file
+	     *
+	     * @throws DbException
+	     * @throws TransactionAbortedException
+	     */
+	    public void rewind() throws DbException, TransactionAbortedException {
+	    }
+
+	    /**
+	     * Close the iterator
+	     */
+	    public void close() {
+	    		
+	    }
+    }
 }
 
