@@ -45,13 +45,15 @@ public class BufferPool {
      *
      * @param tid the ID of the transaction requesting the page
      * @param pid the ID of the requested page
-     * @param perm the requested permissions on the page
+     * @param perm the requested permissions on the page, see Permissions.java
      */
     public  Page getPage(TransactionId tid, PageId pid, Permissions perm)
         throws TransactionAbortedException, DbException {
         // TODO: some code goes here
-	// Usage hint, refer Permission.java for Permission variable
+	// hint, reture value can't be null as if there is no matching page, we will add new page to the buffer pool.
         return null;
+
+	// + you don't need to implement eviction function for this lab
     }
 
     /**
