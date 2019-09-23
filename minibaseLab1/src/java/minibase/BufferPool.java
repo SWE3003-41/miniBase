@@ -20,13 +20,16 @@ public class BufferPool {
     constructor instead. */
     public static final int DEFAULT_PAGES = 50;
 
+    // TODO : define instance variable
+    // hint!! we need to match pid and page, So that we need additional data structure.
+
     /**
      * Creates a BufferPool that caches up to numPages pages.
      *
      * @param numPages maximum number of pages in this buffer pool.
      */
     public BufferPool(int numPages) {
-        // some code goes here
+        // TODO: some code goes here
     }
 
     /**
@@ -42,12 +45,15 @@ public class BufferPool {
      *
      * @param tid the ID of the transaction requesting the page
      * @param pid the ID of the requested page
-     * @param perm the requested permissions on the page
+     * @param perm the requested permissions on the page, see Permissions.java
      */
     public  Page getPage(TransactionId tid, PageId pid, Permissions perm)
         throws TransactionAbortedException, DbException {
-        // some code goes here
+        // TODO: some code goes here
+	// hint, reture value can't be null as if there is no matching page, we will add new page to the buffer pool.
         return null;
+
+	// + you don't need to implement eviction function for this lab
     }
 
     /**
