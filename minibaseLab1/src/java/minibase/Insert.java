@@ -23,24 +23,25 @@ public class Insert extends Operator {
      */
     public Insert(TransactionId t,DbIterator child, int tableid)
             throws DbException {
-        // some code goes here
+        // TODO: some code goes here
     }
 
     public TupleDesc getTupleDesc() {
-        // some code goes here
+        // TODO: some code goes here
         return null;
     }
 
     public void open() throws DbException, TransactionAbortedException {
-        // some code goes here
+        // TODO some code goes here
+	// hint: you have to consider parent class as well
     }
 
     public void close() {
-        // some code goes here
+        // TODO: some code goes here
     }
 
     public void rewind() throws DbException, TransactionAbortedException {
-        // some code goes here
+        // TODO: some code goes here
     }
 
     /**
@@ -57,18 +58,20 @@ public class Insert extends Operator {
      * @see BufferPool#insertTuple
      */
     protected Tuple fetchNext() throws TransactionAbortedException, DbException {
-        // some code goes here
+        // TODO: some code goes here
+	// hint: insert Tuples passed by iterator (child) to Buffer.
         return null;
     }
 
     @Override
     public DbIterator[] getChildren() {
-        // some code goes here
+        // TODO: some code goes here
+	// hint! there is only one element you can pass through DbIterator[]
         return null;
     }
 
     @Override
     public void setChildren(DbIterator[] children) {
-        // some code goes here
+        // TODO: some code goes here
     }
 }
