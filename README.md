@@ -1,6 +1,9 @@
 # miniBase 3003-41
 database project homework code repository
 
+### If You Have Question
+- Leave your question here: [ISSUE](https://github.com/SWE3003-41/miniBase/issues)
+- [FAQ](https://github.com/SWE3003-41/miniBase/issues/3)
 
 # SWE3033-41 MiniBase 
 
